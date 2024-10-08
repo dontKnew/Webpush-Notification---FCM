@@ -1,0 +1,106 @@
+body {
+            font-family: Arial, sans-serif;
+        }
+        #token, #logs {
+            width:100%;
+            overflow:auto;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        #logs {
+            height: auto;
+            overflow-y: auto;
+            background-color: #eef;
+        }
+        .log-entry {
+            padding: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+#notification-permission-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+
+
+/* Overlay Background */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark transparent background */
+    z-index: 999; /* Behind the modal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center the modal on the screen */
+.notification-modal {
+    position: fixed; /* Use fixed to center it relative to the viewport */
+    top: 50%; /* Position it in the middle vertically */
+    left: 50%; /* Position it in the middle horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to truly center it */
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    border-radius: 8px;
+    z-index: 1000; /* On top of the overlay */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;
+    padding: 20px; /* Padding for the modal */
+}
+
+
+/* Styles for the modal content */
+.modal-content {
+    text-align: center;
+}
+
+/* Image styling */
+.notification-modal img {
+    width: 100%; /* Increased size */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+/* Button styling */
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff; /* Primary color */
+    color: white; /* Text color */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Notification title and body styling */
+#notification-title {
+    margin: 10px 0; /* Spacing above and below title */
+    font-size: 1.2em; /* Font size for the title */
+}
+
+#notification-body {
+    font-size: 0.9em; /* Font size for the body */
+    color: #666; /* Lighter color for body text */
+}

@@ -1,0 +1,11 @@
+{
+    "require": {
+        "google/apiclient": "^2.15.0"
+    },
+    "scripts": {
+        "pre-autoload-dump": "Google\\Task\\Composer::cleanup"
+    },
+    "config": {
+        "process-timeout": 3600
+    }
+}
